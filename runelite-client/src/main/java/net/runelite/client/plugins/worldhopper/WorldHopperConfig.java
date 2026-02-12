@@ -159,4 +159,15 @@ public interface WorldHopperConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+		keyName = "displayByteLoss",
+		name = "Display byte loss",
+		description = "Displays byte loss as percentage alongside current ping.",
+		position = 12
+	)
+	default boolean displayByteLoss()
+	{
+		return false;
+	}
 }
